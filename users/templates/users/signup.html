@@ -1,0 +1,18 @@
+{%extends 'users/layout.html'%}
+{% load static%}
+{%block body%}
+<link rel="stylesheet" href="{% static 'users/styles.css'%}">
+<div class="whole">
+<h1 class="title">SIGNUP FOR FREE</h1>
+<form action="{%url 'users:signup'%}" method="post" class="form">
+    {% csrf_token %}
+    <input type="username" name="uname" placeholder="username" class="input">
+    <input type="password" placeholder="password" name="pword" class="input">
+    <input name="firstname" placeholder="first name" class="input">
+    <input name="lastname" placeholder="last name" class="input">
+    <input type="email" name="email" placeholder="email id" class="input">
+
+    <input type="submit" name="submit" class="btn">
+</form>
+</div>
+{%endblock%}

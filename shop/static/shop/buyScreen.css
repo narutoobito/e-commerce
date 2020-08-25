@@ -1,0 +1,56 @@
+:root{
+background: blue;
+color:white;
+}
+
+.product{
+text-align: center;
+border: white 4px solid;
+font-size: 2rem;
+}
+
+.price_tag{
+display: block;
+font-size: 1rem;
+}
+
+.price{
+font-size: 2em;
+}
+
+.type_tag{
+
+display:block;
+margin-top: 1rem;
+}
+
+.about_tag{
+background:orange;
+display:block
+border: solid red 1px;
+position: relative;
+
+}
+
+.about_div{
+margin-top: 5em;
+}
+
+.about{
+width:20rem;
+padding:2rem;
+}
+
+.btn_container{
+margin:auto;
+width: 20rem;
+
+}
+
+.btn{
+position: absolute;
+margin:auto;
+width:10rem;
+height:2rem
+}
+

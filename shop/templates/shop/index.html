@@ -1,0 +1,49 @@
+{%extends 'shop/layout.html'%}
+{%block body%}
+{%load static%}
+<link href="{%static 'shop/styles.css'%}" rel="stylesheet">
+<link href="{%static 'shop/styles2.css'%}" rel="stylesheet">
+<div class="container">
+
+<h1 class="heading">Anime shopping</h1>
+<div class="menu">
+    <h1 class="menu_tag">MENU</h1>
+    <div class="menu_hide">
+    {%if user.is_authenticated%}
+    <div class="menu_title">{{user.first_name}} {{user.last_name}}</div>
+    <a href="{%url "users:signout"%}">
+        <li>
+    logout
+    </li>
+        </a>
+      <a href="{%url "users:cart"%}">
+        <li>
+        Cart
+    </li>
+        </a>
+          {%else%}
+
+    <a href="{%url "users:index"%}">
+        <li>
+    login
+    </li>
+        </a>
+    <a href="{%url "users:signup"%}">
+        <li> signup</li></a>
+        {%endif%}
+        </div>
+</div>
+<div class="list_container">
+{%for p in product%}
+    <a href="{%url 'shop:buy' p.id%}">
+<div class="product_container">
+    <h3>{{p.name}}</h3>
+    <img src="{{p.product_image.url}}" style="width: 6em"/>
+    <h4>{{p.price}}</h4>
+    <h5>{{p.product_type}}</h5>
+</div>
+    </a>
+{%endfor%}
+</div>
+    </div>
+    {%endblock%}

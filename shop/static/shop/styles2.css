@@ -1,0 +1,65 @@
+*{
+margin: 0;
+padding:0;
+}
+
+body{
+color:white;
+background:linear-gradient(blue 40%, white);
+}
+
+.container{
+display:grid;
+grid-template-columns: 20vw auto;
+grid-template-rows: 10rem auto;
+grid-template-areas:
+"menu title"
+"menu product";
+}
+
+.product_container{
+color: cyan;
+}
+
+.heading{
+background:url(./img1.png);
+background-size: cover;
+background-position: center;
+grid-area: title;
+text-transform: uppercase;
+font-size:300%;
+color: midnightblue;
+font-family: fantasy;
+font-style: italic;
+padding: 5vh;
+}
+
+.menu_title{
+margin-top: 10px;
+margin-bottom:10px;
+}
+
+.menu{
+grid-area: menu;
+background:black;
+font-size:2em;
+text-align: center;
+
+}
+
+li{
+background:white;
+margin-top: 10px
+}
+
+.list_container{
+grid-area: product;
+}
+
+a{
+text-decoration: none;
+}
+
+
+.menu{
+}

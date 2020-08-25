@@ -1,0 +1,67 @@
+body{
+background: black;
+}
+
+h1{
+text-align:center;
+}
+
+.whole{
+background:rgba(0,0,0,0.3);
+width:50vw;
+height:60vh;
+margin: auto;
+margin-top:10vh;
+color:white;
+border-bottom: solid thin blue;
+border-left: solid thin blue;
+border-top: solid white;
+border-right: solid white;
+
+}
+
+.form{
+display:grid;
+background: rgba(0,0,0,0.7);
+width:30vw;
+height:30vh;
+margin: auto;
+
+}
+
+.username{
+display: block;
+margin:auto;
+width: 60%;
+}
+
+.password{
+display:block;
+margin:auto;
+margin-top: 20px;
+width:60%;
+}
+
+.btn{
+background: black;
+color: white;
+margin-top: 2em;
+height:3em;
+}
+
+.btn:hover{
+border: solid blue 1px;
+
+}
+
+.input{
+display:block;
+margin:auto;
+margin-top: 20px;
+width:60%;
+}
+
+.message{
+color: red;
+text-align: center;
+}

@@ -1,0 +1,31 @@
+{%extends 'shop/layout.html'%}
+{%load static%}
+{%block body%}
+<link rel="stylesheet" href="{%static 'shop/buyScreen.css'%}">
+<h2 class="product">{{product.name}}</h2>
+<div class="images">
+    <img src="{{product.product_image.url}}"/>
+</div>
+<span class="price_tag">price--<span class="price">{{product.price}}</span></span>
+<span class="type_tag">type--<span class="type">{{product.product_type}}</span></span>
+<div class="about_div">
+<span class="about_tag">about--<span class="about">{{product.description}}</span></span>
+</div>
+
+    <form action=" {% url 'shop:addtocart' product.id %}" name="submit" class="btn_container">
+    <button type="submit" class="btn">ADD TO CART</button>
+</form>
+
+<style>
+    img{
+    width: 20em;
+    }
+    .btn{
+      position: relative;
+      margin-top: 20px;
+      margin-bottom: 10em;
+    }
+
+</style>
+
+{%endblock%}
