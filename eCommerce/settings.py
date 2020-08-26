@@ -25,7 +25,7 @@ SECRET_KEY = '2)c@joseo#i)++(d-02l#v06ak0ayt9x@s$vzay+m4jbjvaa%0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['anime-store-goods-shop.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['anime-store-goods-shop.herokuapp.com', '127.0.0.1:8000', 'localhost:8000',' http://127.0.0.1:8000/', 'localhost']
 
 
 # Application definition
@@ -86,8 +86,8 @@ DATABASES = {
 }
 
 import dj_database_url
-
-DATABASES['default'] = dj_database_url.config(conn_max_age=600)
+db_from_env = dj_database_url.config(conn_max_age=600)
+DATABASES['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
