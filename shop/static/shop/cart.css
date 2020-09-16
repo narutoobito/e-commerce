@@ -1,31 +1,51 @@
 :root{
-background: linear-gradient(rgb(149,2,167),pink);
-margin:0;
-padding:0;
+    background: linear-gradient(rgb(149,2,167),pink);
+    margin:0;
+    padding:0;
 }
 
 .user{
-text-align: center;
-font-size: 3em;
-color:white;
-text-transform:uppercase;
-border-bottom: dashed 2px white;
+    text-align: center;
+    font-size: 3em;
+    color:white;
+    text-transform:uppercase;
+    border-bottom: dashed 2px white;
 }
 
 .cart_item{
-background: yellow;
-margin-top: 10vh;
-color:green;
+    background: yellow;
+    margin-top: 10vh;
+    color:green;
 }
 
 li{
-padding:4px;
-font-size: 150%;
-font-family: fantasy;
-border:1px dotted blue;
-list-style: none;
+    padding:4px;
+    font-size: 150%;
+    font-family: fantasy;
+    border:1px dotted blue;
+    list-style: none;
 }
 
 .remove_btn{
-right:0;
+    right:0;
 }
+
+img{
+    width: 10em;
+    margin-left: auto;
+    margin-right: 3em;
+    display: block;
+}
+
+button{
+    padding: 10px;
+    background: blue;
+    color: white;
+}
+
+.price{
+    display: inline-block;
+    position: relative;
+    left: 20em;
+}
+

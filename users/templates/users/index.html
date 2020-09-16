@@ -2,6 +2,7 @@
 {% load static%}
 {%block body%}
 <link rel="stylesheet" href="{% static 'users/styles.css'%}">
+<h1>Login for ANIME SHOP</h1>
 <div class="whole">
 <h1>Enter your username and password</h1>
 <form action="{% url 'users:index'%}" method="post" class="form">
@@ -14,4 +15,8 @@
 <p class="message">{{message}}</p>
 {%endif%}
 </div>
+
+<style>
+
+</style>
 {%endblock%}

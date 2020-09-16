@@ -46,4 +46,29 @@
 {%endfor%}
 </div>
     </div>
+
+<style>
+    @media(max-width: 600px){
+        .container{
+            display: block;
+            }
+        .product_container{
+            width: 42vw;
+        }
+        .menu_tag{
+            font-size: 2rem;
+            text-align: end;
+        }
+        .menu_hide{
+            display: none;
+        }
+        .menu:hover>.menu_hide{
+            display : block;
+        }
+
+    }
+
+
+</style>
+
     {%endblock%}

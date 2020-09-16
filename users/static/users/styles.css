@@ -65,3 +65,25 @@ width:60%;
 color: red;
 text-align: center;
 }
+
+
+
+
+@media(max-width: 600px){
+        h1{
+            font-size: 1.5rem;
+            color:white;
+        }
+        .whole{
+            width: 90vw;
+        }
+        .username,.password,.input{
+            width: 12rem;
+            height: 2rem;
+            margin-bottom: 2px;
+            text-align: center;
+        }
+        .form{
+            justify-content: center;
+        }
+    }
