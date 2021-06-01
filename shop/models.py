@@ -8,7 +8,11 @@ class Products(models.Model):
     price = models.CharField(max_length=10, default="0 Rupees")
     description = models.TextField()
     product_image = models.ImageField(upload_to='images/')
+    image_url = models.URLField(default="NA")
 
 
     def __str__(self):
         return f"{self.name} {self.product_type} {self.price}"
+    
+    def __repr__(self):
+        return "Products"

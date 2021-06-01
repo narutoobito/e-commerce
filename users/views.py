@@ -10,6 +10,8 @@ def index(request):
     if request.method == "POST":
         username = request.POST["username"]
         password = request.POST["password"]
+        a=User.objects.filter()
+        print(a)
         user = authenticate(username=username, password=password)
         if user is not None:
             login(request, user)

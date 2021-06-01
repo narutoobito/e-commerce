@@ -4,7 +4,8 @@
 <link rel="stylesheet" href="{%static 'shop/buyScreen.css'%}">
 <h2 class="product">{{product.name}}</h2>
 <div class="images">
-    <img src="{{product.product_image.url}}"/>
+    <!-- <img src="{{product.product_image.url}}"/> -->
+    <img src="{{product.image_url}}" class="show-img"/>
 </div>
 <span class="price_tag">price--<span class="price">{{product.price}}</span></span>
 <span class="type_tag">type--<span class="type">{{product.product_type}}</span></span>
@@ -18,7 +19,9 @@
 
 <style>
     img{
-    width: 20em;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
     }
     .btn{
       position: relative;

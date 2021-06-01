@@ -11,24 +11,24 @@
     <div class="menu_hide">
     {%if user.is_authenticated%}
     <div class="menu_title">{{user.first_name}} {{user.last_name}}</div>
-    <a href="{%url "users:signout"%}">
+    <a href="{%url "users:signout" %}">
         <li>
     logout
     </li>
         </a>
-      <a href="{%url "users:cart"%}">
+      <a href="{%url "users:cart" %}">
         <li>
         Cart
     </li>
         </a>
           {%else%}
 
-    <a href="{%url "users:index"%}">
+    <a href="{%url "users:index" %}">
         <li>
     login
     </li>
         </a>
-    <a href="{%url "users:signup"%}">
+    <a href="{%url "users:signup" %}">
         <li> signup</li></a>
         {%endif%}
         </div>
@@ -38,7 +38,8 @@
     <a href="{%url 'shop:buy' p.id%}">
 <div class="product_container">
     <h3>{{p.name}}</h3>
-    <img src="{{p.product_image.url}}" style="width: 6em"/>
+    <!-- <img src="{{p.product_image.url}}" style="width: 6em"/> -->
+    <img src="{{p.image_url}}" style="max-width: 70%; max-height: 70%" />
     <h4>{{p.price}}</h4>
     <h5>{{p.product_type}}</h5>
 </div>
