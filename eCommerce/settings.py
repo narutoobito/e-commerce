@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '2)c@joseo#i)++(d-02l#v06ak0ayt9x@s$vzay+m4jbjvaa%0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['anime-store-goods-shop.herokuapp.com', 'localhost']
 

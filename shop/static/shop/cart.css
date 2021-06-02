@@ -50,10 +50,8 @@ button {
 }
 
 .price {
-  display: inline-block;
+  display: block;
   position: relative;
-  margin-left: 20rem;
-  margin-right: auto;
 }
 
 .product-name {
