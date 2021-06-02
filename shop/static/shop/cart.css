@@ -12,7 +12,12 @@
   border-bottom: dashed 2px white;
 }
 
+/* .container {
+  position: absolute;
+} */
+
 .cart_item {
+  position: relative;
   background: rgb(65, 219, 199);
   margin-top: 10vh;
   color: green;
@@ -47,5 +52,10 @@ button {
 .price {
   display: inline-block;
   position: relative;
-  left: 20em;
+  margin-left: 20rem;
+  margin-right: auto;
+}
+
+.product-name {
+  margin-left: 10vw;
 }

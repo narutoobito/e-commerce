@@ -10,7 +10,8 @@ CART of {{user}}
 {%for p in owned%}
 
         <a href="{%url 'shop:buy' p.product.id%}">
-<li>{{p.product.name}}
+           <li>
+                {{p.product.name}}
             <h5 class="price">{{p.product.price}}</h5>
     <!-- <img src="{{p.product.product_image.url}}"/> -->
     <img src="{{p.product.image_url}}"/>
